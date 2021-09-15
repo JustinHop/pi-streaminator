@@ -1,0 +1,32 @@
+#!/bin/bash
+IFS=$'\t\n'
+
+set -x
+
+function is_int() { return $(test "$@" -eq "$@" > /dev/null 2>&1); }
+
+ARG=""
+
+ARG=~/tube/latest.m3u
+for _A in $@ ; do
+    if [ -f "$_A" ]; then
+        ARG=""
+        break
+    fi
+done
+
+if [ $1 ] && ! [ $2 ] ; then
+    if $( is_int $1 ) ; then
+        ARG="$ARG --playlist-start=$1"
+        shift
+    fi
+fi
+
+
+eval exec -a youtube-player mpv \
+    --profile=youtube \
+    --force-window=immediate \
+    --idle \
+    --keep-open=yes \
+    --term-osd-bar \
+    $ARG $@

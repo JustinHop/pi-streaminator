@@ -1,0 +1,15 @@
+--2020-04-26 16:08:13--  https://www.bitchute.com/feeds/rss/channel/net4truthusa
+Resolving www.bitchute.com (www.bitchute.com)... 104.26.7.35, 104.26.6.35, 2606:4700:20::681a:723, ...
+Connecting to www.bitchute.com (www.bitchute.com)|104.26.7.35|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /feeds/rss/channel/net4truthusa/ [following]
+--2020-04-26 16:08:14--  https://www.bitchute.com/feeds/rss/channel/net4truthusa/
+Reusing existing connection to www.bitchute.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/rss+xml]
+Saving to: ‘net4truthusa’
+
+     0K .......... .......... .......... .......... ..          335K=0.1s
+
+2020-04-26 16:08:15 (335 KB/s) - ‘net4truthusa’ saved [43744]
+
